@@ -104,6 +104,126 @@ body {
     font-size: 16px;
 }
 
+/* group logo */
+.group-logo-area {
+    width: 100%;
+    max-width: 1194.84px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 60px auto;
+    gap: 20px
+}
+
+.group-logo-area img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.services-area {
+    width: 100%;
+    max-width: 1170px;
+    height: 187.73px;
+    margin: auto;
+    border-top: 1.5px solid #707070;
+    border-bottom: 1.5px solid #707070;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.service {
+    width: 209px;
+    height: 69.9px;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    justify-content: space-evenly;
+    gap: 10px
+}
+
+.service-text {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.service-para {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 8px;
+    font-weight: 400;
+    color: #1D1D1F;
+}
+
+.service-span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1D1D1F;
+}
+
+/* Health benefit */
+.health-benefit {
+    width: 100%;
+    max-width: 1138px;
+    height: 560.26px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.health {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.health-image {
+    width: 100%;
+    max-width: 493px;
+    height: 560.26px;
+    background-color: #F3FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.health-image img {
+    width: 100%;
+    max-width: 445px;
+    height: 512.26px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.health-para {
+    color: #1D1D1F;
+    font-size: 16px;
+}
+
+.health-text {
+    padding-top: 20px;
+}
+
+.health-title {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.check-icon {
+    font-size: 20px;
+    font-weight: 900;
+    color: #06C167;
+    padding-right: 8px;
+}
+
 /* Responsive navbar */
 @media (max-width:768px) {
     .header-area {
@@ -112,8 +232,6 @@ body {
         padding: 10px 0;
         background-color: #F3FCF7;
         padding: 0 15px;
-
-
     }
 
     .header {
@@ -189,4 +307,76 @@ body {
         height: 50px;
         font-size: 14px;
     }
+
+    /* group */
+    .group-logo-area {
+        width: 320px;
+        margin: auto;
+        align-items: center;
+        padding-left: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 10px;
+    }
+
+    .group-logo-area img:nth-child(n+4) {
+        display: none;
+
+    }
+
+    .group-logo-area img:nth-child(3) {
+        transform: translateX(80px);
+        /* move up slightly */
+    }
+
+    /* service */
+    .service-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 150px;
+        gap: 25px;
+    }
+
+    .services-area {
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+
+    }
+
+    .service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Health */
+    .health {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .health-benefit {
+        width: 100%;
+        margin: auto;
+        padding: 0 16px;
+        display: flex;
+    }
+
+    .health-text {
+        padding: 10px 70px;
+    }
+
+    .health-para1 {
+        text-align: center;
+    }
+
+    .mob-break {
+        display: none;
+    }
+
 }
