@@ -2,6 +2,7 @@ body {
     font-family: "Inter", sans-serif;
     padding: 0;
     margin: 0;
+    color: #1D1D1F;
 }
 
 .header-area {
@@ -174,6 +175,7 @@ body {
     margin-top: 120px;
     margin-bottom: 20px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .health {
@@ -208,7 +210,7 @@ body {
 }
 
 .health-text {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .health-title {
@@ -222,6 +224,220 @@ body {
     font-weight: 900;
     color: #06C167;
     padding-right: 8px;
+}
+
+/* stats section */
+.stats-section {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-text {
+    padding-top: 40px;
+}
+
+.stats-details {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.stats-image {
+    background-color: #F3FCF7;
+    width: 100%;
+    max-width: 541px;
+    height: 607.12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.stats-image img {
+    max-width: 445px;
+    height: 512.26px
+}
+
+.stats-title {
+    width: 100%;
+    max-width: 570px;
+    height: 145px;
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.stats-number {
+    color: #06C167;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* food variety  */
+.features-section {
+    max-width: 1170px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.feature-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #E8FFF1;
+    border: 1.5px solid #06C167;
+    border-radius: 10px;
+    color: #06C167;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+/* Cards */
+.feature-card {
+    background: #F0FFF6;
+    padding: auto;
+    text-align: left;
+    border: 1.5px solid #06C167;
+
+}
+
+/* Image Cards */
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text Cards */
+.text-card {
+    background: #EFFFF6;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.text-card h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text-card p {
+    color: #444;
+    margin-bottom: 40px;
+
+}
+
+.discover-btn {
+    color: #06C167;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #E6F9F0;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+/* Popular section */
+.popular-title {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 4px;
+}
+
+.popular-section {
+    width: 100%;
+    max-width: 1170px;
+    height: 617.5px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 100px
+}
+
+.product-card {
+    width: 100%;
+    max-width: 270px;
+    height: 444px;
+    border: 1.5px solid #06C167;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 14px;
+}
+
+.product-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.product-image {
+    padding-bottom: 20px;
+}
+
+.rating {
+    color: #06C167;
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.price {
+    padding-bottom: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #767675;
+    font-size: 20px;
+    font-weight: 600px;
+    line-height: 100%;
+}
+
+.new-price {
+    color: #06C167;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 100%;
+}
+
+.buy-button {
+    padding: 20px 30px;
+    color: #06C167;
+    border: 2px solid #06C167;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.arrow-icon {
+    padding-left: 20px;
+
+}
+
+.product-para {
+    margin-top: 30px;
+
 }
 
 /* Responsive navbar */
@@ -365,6 +581,8 @@ body {
         margin: auto;
         padding: 0 16px;
         display: flex;
+        flex-direction: column;
+        margin-bottom: 600px;
     }
 
     .health-text {
@@ -378,5 +596,106 @@ body {
     .mob-break {
         display: none;
     }
+
+    /* stats*/
+    .stats {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .stats-section {
+        padding: 20px 16px;
+        margin: 50px auto;
+        width: 100%;
+    }
+
+    .stats-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stats-details {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .stats-image {
+        display: flex;
+        justify-content: center
+    }
+
+    .stats-image img {
+        background-color: #F3FCF7;
+        width: 100%;
+        height: auto;
+
+    }
+
+    /* 
+     */
+    .feature-title {
+        font-size: 32px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding-left: 26px;
+    }
+
+    .feature-card {
+        text-align: center;
+    }
+
+    .text-card {
+        padding-bottom: 30px;
+
+    }
+
+    .feature-badge {
+        color: #1D1D1F;
+        border: 0;
+        background-color: White;
+    }
+
+    .discover-btn {
+        margin-bottom: 50px;
+    }
+
+    /* Products */
+    .product-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .product-card {
+        margin: 0;
+        width: 120%;
+        max-width: 360px;
+        border: 2px solid #76767540;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+
+    .popular-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .popular-section {
+        height: auto;
+        padding: 10px;
+    }
+
+    .product-para {
+        margin-top: 30px;
+        text-align: center;
+    }
+
 
 }
